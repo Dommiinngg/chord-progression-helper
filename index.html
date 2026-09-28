@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Chord Progression Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Chord Progression Helper</h1>
+    <p>Welcome to my first coding project!</p>
+
+    <div id="introSection" class="card soft-shadow">
+        <h2>My Goal:</h2>
+        <p>This tool will help beginners understand chord progressions.</p>
+
+        <h2>How It Works:</h2>
+        <p>The user will choose a key they want to learn.</p>
+    </div>
+
+    <div id="keySection" class="card soft-shadow">
+        <h2>Choose a Key:</h2>
+    <select id="keySelect" class="soft-shadow">
+            <option>C</option>
+            <option>G</option>
+            <option>D</option>
+            <option>A</option>
+            <option>F</option>
+            <option>Bb</option>
+            <option>E</option>
+    </select>
+    </div>
+
+    <div id="chordDisplay" class="card soft-shadow" style="white-space: pre-line;"></div>
+
+    <button id="copyButton">Copy Chord Progression</button>
+    <button id="saveButton">⭐ Save This Key</button>
+
+    <div id="favoritesList" class="card soft-shadow"></div>
+
+    <div id="selectedChord" class="soft-shadow">
+    <span>Selected Chord</span>
+    <div id="selectedChordName"></div>
+    <div id="selectedRomanNumeral"></div>
+    <div id="chordQuality"></div>
+    <div id="chordPosition"></div>
+    <div id="chordNotesDisplay"></div>
+    <div id="chordFunction"></div>
+    <hr id="chordDivider">
+    <p id="chordExplanation"></p>
+    <div id="commonDestination">
+        <span id="destinationText"></span>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

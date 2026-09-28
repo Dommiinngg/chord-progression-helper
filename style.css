@@ -1,0 +1,250 @@
+.chord-row{
+    padding: 8px;
+    border: 1px solid #b8d4f0;
+    background-color: #cfe4fb;
+    color:darkblue;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 18px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+}
+
+.chord-row span:first-child {
+    font-weight: bold;
+    font-size: 14px;
+    width: 40px;
+    text-align: center;
+}
+
+.chord-row span:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.chord-row:hover {
+    background-color: #b8d4f0;
+    transform: translateY(-1px);
+}
+
+
+#chordDisplay {
+    margin-top: 40px;
+    width: 300px;
+    max-width: 400px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background: linear-gradient(to bottom, #f8fbff, #e3eeff);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: darkblue;
+    padding-bottom: 15px;
+    border-bottom: 2px solid lightsteelblue;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: darkblue;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#keySelect{
+    padding: 8px;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    font-weight: bold;
+    color: darkblue;
+    transition: border 0.2s;
+}
+
+#keySelect:focus{
+    border: 2px solid darkblue;
+}
+
+#selectedChord{
+    width: 280px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f4f9ff;
+    border: 1px solid #b8d4f0;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#selectedChord > div {
+    margin-top: 8px;
+}
+
+
+#selectedChord span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#selectedRomanNumeral {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+#chordExplanation {
+    font-size: 14px;
+}
+
+.chord-row.selected {
+    background-color: #b8d4f0;
+    border: 2px solid darkblue;
+}
+
+#chordFunction {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#commonDestination {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+#chordQuality {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#chordPosition {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+#chordFunction {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+#selectedChordName {
+    font-size: 28px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#chordDivider {
+    border: none;
+    border-top: 1px solid lightsteelblue;
+    margin: 12px 0;
+}
+
+@keyframes flashHighlight {
+    0% { background-color: #cfe8ff; }
+    100% { background-color: transparent; }
+}
+
+.chord-row.flash {
+    animation: flashHighlight 0.6s ease-out;
+}
+
+#introSection {
+    max-width: 500px;
+}
+
+#keySection {
+    max-width: 300px;
+}
+
+.card {
+    background-color: #eaf3ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 25px auto;
+}
+
+.soft-shadow {
+    box-shadow: 2px 2px 6px rgba(100, 140, 190, 0.25);
+}
+
+#copyButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #b8d4f0;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #8bb8e8;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#copyButton:hover {
+    background-color: #a3c7ec;
+}
+
+#chordNotesDisplay {
+    font-size: 14px;
+    font-weight: normal;
+    color: darkblue;
+    background-color: #eaf3ff;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+.favorite-key {
+    cursor: pointer;
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-right: 4px;
+}
+
+.favorite-key:hover {
+    color: #4a7ab5;
+}
+
+.remove-key {
+    cursor: pointer;
+    color: #7a9cc6;
+    font-size: 12px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+
+.remove-key:hover {
+    color: darkblue;
+}
